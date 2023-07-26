@@ -1,0 +1,225 @@
+
+.login-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    width: 600px;
+    height: 600px;
+    max-height: 80vh; 
+  overflow-y: auto; 
+    max-width: 90%; 
+  }
+  
+
+
+button[type='submit'] {
+    padding: 8px 15px;
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 8px auto;
+    display: block;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #0056b3;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .logo-container img {
+   height: auto;
+   width: 100px;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+ 
+  @media screen and (max-width: 600px) {
+    .login-popup {
+      padding: 10px; 
+      max-width: 95%; 
+    }
+  
+    .logo-container img {
+      max-width: 80px; 
+    }
+  }
+  
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 350px;
+     height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type='email'],
+  input[type='password'] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .password-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+
+  }
+  
+  .eye-icon {
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 4px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+    z-index: 1;
+  }
+  
+  .eye-icon:hover {
+    background-color: #e1e1e1;
+  }
+  
+
+  .password-input.show-icon-padding {
+    padding-right: 32px;
+  }
+  .password-input.show-border {
+    border: 1px solid #ccc;
+    padding-right: 32px;
+  }
+
+  .forgot-password {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+  }
+  
+  .forgot-password a {
+    font-size: 14px;
+    color: grey;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+
+.captcha-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type='text'] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+  }
+  
+  .captcha-text {
+    padding: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .reload-icon {
+    padding: 6px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    position: relative;
+  }
+  
+  .line {
+    flex: 1;
+    margin: 0;
+    border: 1px solid #ccc;
+  }
+  
+  .or-text {
+    margin: 0 12px;
+    font-weight: bold;
+    color: #888;
+  }
+  .login-with-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .login-with-google img{
+    width:20px;
+    height: 20px;
+  }
+  .login-with-google span {
+    margin: 0 8px;
+  }
+  
+  .google-symbol {
+    font-size: 18px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    form {
+      padding: 10px; 
+    }
+  }
+  
+  

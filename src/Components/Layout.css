@@ -1,0 +1,103 @@
+
+
+.layout {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+.scrollable-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.scrollable-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.scrollable-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 20px;
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+.card {
+  width: 220px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  flex: 1;
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+ 
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h3 {
+  font-size: 14px;
+  margin: 0;
+  color: #333;
+}
+
+.card p {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+
+
+  
+  .section {
+    width: 100%;
+    max-width: 1000px; 
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .scrollable-content {
+    max-height: 300px; 
+    overflow-y: auto;
+    padding-right: 10px; 
+  }
+  .horizontal-line {
+    width: 80%;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  h2 {
+    position: sticky;
+    top: 0;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
